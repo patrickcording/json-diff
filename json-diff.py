@@ -18,4 +18,4 @@ if __name__ == '__main__':
 
     ddiff = DeepDiff(from_file_json, to_file_json, ignore_order=args.ignore_order)
 
-    print(json.dumps(json.loads(ddiff.to_json()), indent=2, sort_keys=True))
+    print(json.dumps(json.loads(ddiff.to_json()), indent=2, sort_keys=False))
